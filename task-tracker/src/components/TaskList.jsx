@@ -6,7 +6,7 @@ function TaskList(props) {
       {
             
                 props.tasks.map((task) => (
-                    <TaskItem key={task.id} name={task.name} status={task.status} />
+                    <TaskItem key={task.id} name={task.name} status={task.status} toggleTask = {props.toggleTask} id={task.id} deleteTask = {props.deleteTask}/>
                 ))
                 
       }
